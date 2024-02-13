@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://i8u846fb3e2u"]
+
+[ext_resource type="Texture2D" uid="uid://bvcn2qs6vm6wv" path="res://Lab 1, Sprite 1.png" id="1_dfn12"]
+[ext_resource type="Texture2D" uid="uid://c7ky6pya6sh3o" path="res://Lab 1, Sprite 2.png" id="2_1fjrv"]
+[ext_resource type="PackedScene" uid="uid://jb4fs6at0r4g" path="res://second.tscn" id="3_fbmcs"]
+[ext_resource type="Texture2D" uid="uid://ck3x2i3q2ky" path="res://Lab 1, Sprite 3.webp" id="4_e4yle"]
+[ext_resource type="Texture2D" uid="uid://b41ndwfvccb8i" path="res://Lab 1, Sprite 4.webp" id="5_vus6o"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="GreyFrenchie" type="Sprite2D" parent="."]
+position = Vector2(847, 488)
+scale = Vector2(0.39, 0.424)
+texture = ExtResource("1_dfn12")
+
+[node name="BeigeFrenchie" type="Sprite2D" parent="."]
+position = Vector2(340, 498)
+texture = ExtResource("2_1fjrv")
+
+[node name="SecondScene" parent="." instance=ExtResource("3_fbmcs")]
+
+[node name="Moon" type="Sprite2D" parent="SecondScene"]
+position = Vector2(842, 156)
+scale = Vector2(0.147917, 0.135417)
+texture = ExtResource("4_e4yle")
+
+[node name="Sun" type="Sprite2D" parent="SecondScene"]
+position = Vector2(341, 171)
+scale = Vector2(0.144792, 0.140625)
+texture = ExtResource("5_vus6o")
