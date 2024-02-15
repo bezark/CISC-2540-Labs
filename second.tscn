@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://jb4fs6at0r4g"]
+[gd_scene load_steps=3 format=3 uid="uid://jb4fs6at0r4g"]
+
+[ext_resource type="Texture2D" uid="uid://ck3x2i3q2ky" path="res://Lab 1, Sprite 3.webp" id="1_2gpco"]
+[ext_resource type="Texture2D" uid="uid://b41ndwfvccb8i" path="res://Lab 1, Sprite 4.webp" id="2_2v23h"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Moon" type="Sprite2D" parent="."]
+position = Vector2(842, 156)
+scale = Vector2(0.147917, 0.135417)
+texture = ExtResource("1_2gpco")
+
+[node name="Sun" type="Sprite2D" parent="."]
+position = Vector2(341, 171)
+scale = Vector2(0.144792, 0.140625)
+texture = ExtResource("2_2v23h")
